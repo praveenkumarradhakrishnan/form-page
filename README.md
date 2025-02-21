@@ -16,7 +16,7 @@ This is a simple form page built using HTML, CSS, and JavaScript. The form inclu
 ## Setup Instructions
 1. Clone the repository:
    bash
-   git clone https://github.com/your-username/repository-name.git
+   [https://praveenkumarradhakrishnan.github.io/form-page/]
    
 2. Navigate to the project folder:
    bash

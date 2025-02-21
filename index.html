@@ -1,0 +1,154 @@
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: rgb(111, 197, 197);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        border: none;
+        border-bottom: black solid 1px;
+        background-color: antiquewhite;
+
+        margin-top: 5px;
+    }
+
+    input:hover {
+        background-color: antiquewhite;
+    }
+
+    div {
+        background-color: rgb(237, 237, 118);
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px;
+        color: black;
+        border-radius: 10px;
+
+    }
+
+    #btn {
+        background-color: rgb(55, 147, 10);
+        border: 2px;
+        background-color: yellowgreen;
+        border-radius: 7px;
+        padding: 3px;
+        margin-top: 5px;
+
+    }
+
+    #btn:hover {
+        background-color: orchid;
+        cursor: pointer;
+    }
+
+    form {
+
+        margin-top: 20px;
+        border: none;
+        border: solid grey 2px;
+        width: fit-content;
+        background-color: bisque;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Form page</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <table border=" 1">
+                <thead>
+                    <th colspan="2">
+
+
+                        <h3>REGISTER</h3>
+
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p for="pass"> Name :</p>
+                        </td>
+                        <td>
+                            <input id="name" type="name" placeholder="Enter your name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p> EMAIL :</p>
+                        </td>
+                        <td>
+                            <input type="email" id="email" placeholder="enter your email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p for="pass"> Password :</p>
+
+                        </td>
+                        <td>
+                            <input name="pass" id="password" type="password" minlength="6" maxlength="8"
+                                placeholder="Enter your password" required><br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="btn" style="width: 100%;">Register</button>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+        </form>
+    </div>
+    <script>
+        var btn = document.getElementById("btn")
+        var name = document.getElementById("name")
+        var email = document.getElementById("email")
+        var password = document.getElementById("password")
+        btn.disabled = true;
+        btn.addEventListener("click", function () {
+            alert("ha")
+        })
+        password.addEventListener("keyup", function () 
+        {
+            if (password.value.length > 0 ) {
+                btn.disabled=false;
+            }
+           
+            else{
+                btn.disabled=true;
+            }
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>
